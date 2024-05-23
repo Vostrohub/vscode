@@ -5,6 +5,19 @@ div {
     background-color: lightblue;
     border: 1px solid black;
     padding: 10px;
-    margin: 10px;
+    margin : 10px; 
     box-shadow: 2px 2px 5px gray;
+    animation: myAnimation 1s infinite;
+}
+
+@keyframes myAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+div:hover {
+    background-color: rgb(41, 3, 3);
+    color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 8px rgb(99, 47, 47);
 }
